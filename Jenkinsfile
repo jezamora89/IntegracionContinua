@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage("build"){
       steps {
-        echo 'testing jenkins integration'
+        echo 'testing jenkins copying files to home folder'
+        fileOperations([fileCopyOperation(
+          includes:*,
+          targetLocation:/home
+        )])
       }
     }
   }
