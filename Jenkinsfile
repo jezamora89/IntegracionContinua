@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("build"){
       steps {
-        echo '${pwd()}'
+        echo 'testing jenkins schedule trigger'
       }
     }
   }
